@@ -1,0 +1,90 @@
+{
+  "directory": {
+    "development": {
+      "envName": "src",
+      "component": "components",
+      "container": "routes",
+      "model": "models",
+      "service": "services",
+      "config": "configs",
+      "util": "utils",
+      "sprite": "sprite",
+      "style": "less",
+      "data": "json",
+      "test": "__test__",
+      "document": "doc"
+    },
+    "build": {
+      "envName": ".build"
+    },
+    "production": {
+      "envName": "dist",
+      "resource": "resources",
+      "javascript": "js",
+      "style": "css",
+      "asset": "images"
+    }
+  },
+  "theme": {
+    "primary-color": "#1e2a38"
+  },
+  "general": {
+    "publicPath": ".",
+    "externals": {
+      "configs": "configs",
+      "electron": "require('electron')",
+      "sequelize": "require('sequelize')",
+      "sqlite3": "require('sqlite3')"
+    },
+    "resolve": {
+      "alias": {
+        "rework": "rework.less/rework.less",
+        "sprite": "sprite.less",
+        "moment": "moment/moment.js"
+      },
+      "extensions": [".web.js", ".js"],
+      "mainFields": ["browser", "jsnext:main", "main"]
+    },
+    "performance": {
+      "maxAssetSize": 400000,
+      "maxEntrypointSize": 600000
+    },
+    "target": "electron-renderer",
+    "devtool": "source-map",
+    "html": {
+      "title": "VD - Single Page Application",
+      "description": "应用描述",
+      "keywords": "应用关键词"
+    }
+  },
+  "optimizer": {
+    "js": {},
+    "css": {
+      "minimize": true,
+      "browsers": ["last 3 versions", "> 1%"]
+    },
+    "asset": {
+      "limit": 10000,
+      "extract": false
+    }
+  },
+  "debug": {
+    "port": 3000,
+    "sync": false,
+    "browsersync": {
+      "port": 4000,
+      "open": true
+    }
+  },
+  "preview": {
+    "port": 5000
+  },
+  "deploy": {
+    "environment": "Node",
+    "host": "",
+    "port": "",
+    "username": "",
+    "password": "",
+    "token": ""
+  }
+}
