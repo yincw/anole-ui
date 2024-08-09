@@ -1,2 +1,23 @@
-# webpack-boilerplate
-各种类型项目（PC Web 端、PC 客户端、移动 Web 端、移动客户端、Node 服务端、类库）的 Webpack 项目样板
+# anole-ui
+
+A static site base on [dumi](https://d.umijs.org).
+
+## Development
+
+```bash
+# install dependencies
+$ pnpm install
+
+# start dev server
+$ pnpm start
+
+# build docs
+$ pnpm run build
+
+# Locally preview the production build
+$ pnpm run preview
+```
+
+## LICENSE
+
+MIT
