@@ -4,6 +4,7 @@ import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig';
 export default defineConfig({
   base: '/anole-ui/',
   publicPath: '/anole-ui/',
+  // 国际化
   // locales: [
   //   { id: 'zh-CN', name: '中文' },
   //   { id: 'en-US', name: 'EN' },
@@ -12,22 +13,27 @@ export default defineConfig({
   themeConfig: defineThemeConfig({
     logo: '/rework.svg',
     name: 'Rework',
-    rtl: false,
-    socialLinks: {
-      github: 'https://github.com/yincw/',
-    },
-    localesEnhance: [
-      { id: 'zh-CN', switchPrefix: '中' },
-      { id: 'en-US', switchPrefix: 'en' }
-    ],
 
     nav: [
       { title: '主页', link: '/' },
       { title: '文档页', link: '/markdown' },
     ],
-    showLineNum: true,
-    sidebarGroupModePath: true, // 侧边栏是否以分组形式展现
 
+    rtl: false,
+    // 国际化图标前缀
+    localesEnhance: [
+      { id: 'zh-CN', switchPrefix: '中' },
+      { id: 'en-US', switchPrefix: 'en' }
+    ],
+    socialLinks: {
+      github: 'https://github.com/yincw/',
+    },
+
+    // 文档
+    showLineNum: true,
+    sidebarGroupModePath: true, // 侧边栏是否以分组形式展现（非多级菜单形式）
+
+    // 主页
     title: 'Dumi Theme Ant Design',
     description: {
       'zh-CN': 'Ant Design 5.0 官网风格类似的 dumi2 主题插件',
@@ -38,22 +44,22 @@ export default defineConfig({
         {
           type: 'primary',
           text: '开始使用',
-          link: '/guide/introduce'
+          link: '/markdown'
         },
         {
           text: '配置',
-          link: '/config/base'
+          link: '/markdown/front-matter-'
         }
       ],
       'en-US': [
         {
           type: 'primary',
           text: 'Start',
-          link: '/guide/introduce-en'
+          link: '/markdown'
         },
         {
           text: 'Config',
-          link: '/config/base-en'
+          link: '/markdown/front-matter-'
         }
       ]
     },

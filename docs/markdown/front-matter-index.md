@@ -1,8 +1,8 @@
 ---
 group: 
   title: Front Matter
-  order: 1
-order: 2
+  order: 2
+order: 1
 ---
 
 # Front Matter
@@ -24,8 +24,8 @@ order: 2
  `group` | `string / { title: string; order: number }` | `undefined` | 配置当前页所属的侧边菜单分组，未配置时不会展示分组。
  `order` | `number` | `undefined` | 配置当前页面在侧边菜单中的排序，未配置时按照文件名排序。
  `sidebar` | `Boolean` | `true` | 控制侧边栏菜单的显示或隐藏。
- `type` | `string / { title: string; order: number }` | `undefined` | 配置二级侧边栏
- `tag` | `string / { title: string; color: string }` | `true` | 展示菜单栏更新或者标识状态。color 可选值：processing、success、warning。
+ **`type`** | `string / { title: string; order: number }` | `undefined` | 配置二级侧边栏
+ **`tag`** | `string / { title: string; color: string }` | `true` | 展示菜单栏更新或者标识状态。color 可选值：processing、success、warning。
 
 - https://d.umijs.org/config/markdown
 - https://kuangpf.com/dumi-theme-antd/config/markdown

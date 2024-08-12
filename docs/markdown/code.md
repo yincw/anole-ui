@@ -1,8 +1,8 @@
 ---
 group: 
   title: Markdown
-  order: 2
-order: 1
+  order: 1
+order: 2
 demo:
   cols: 2
 ---

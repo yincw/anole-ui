@@ -1,8 +1,8 @@
 ---
 group: 
   title: Markdown
-  order: 7
-order: 1
+  order: 1
+order: 6
 ---
 
 # Badge

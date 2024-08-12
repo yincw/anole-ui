@@ -1,8 +1,8 @@
 ---
 group: 
   title: Emoji
-  order: 1
-order: 3
+  order: 3
+order: 1
 ---
 
 # Emoji
